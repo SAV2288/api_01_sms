@@ -20,8 +20,8 @@ def get_status(user_id):
 
 
 def sms_sender(sms_text):
-    account_sid = os.environ['TWILIO_ACCOUNT_SID']
-    auth_token = os.environ['TWILIO_AUTH_TOKEN']
+    account_sid = os.environ['ACCOUNT_SID']
+    auth_token = os.environ['AUTH_TOKEN']
     number_from = os.environ['NUMBER_FROM']
     number_to = os.environ['NUMBER_TO']
 
