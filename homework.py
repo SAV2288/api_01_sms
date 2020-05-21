@@ -15,7 +15,7 @@ def get_status(user_id):
     'access_token': os.getenv('VK_TOKEN'),
     'fields':'online',
     }
-    user_status = requests.post(f'https://api.vk.com/method/users.get?',params=params).json()['response'][0]['online']
+    user_status = requests.post(f'https://api.vk.com/method/users.get',params=params).json()['response'][0]['online']
     return user_status  # Верните статус пользователя в ВК
 
 
